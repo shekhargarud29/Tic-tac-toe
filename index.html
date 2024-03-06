@@ -15,20 +15,23 @@
             <input type="text" id="fname"><br>
             <label for="">SecondPlayer:-</label>
             <input type="text" name="" id="sname">
-            <button onclick="checkRequirement()">Next</button>
+            <button onclick="checkRequirement()" class="mx-3">Next</button>
             <button onclick="goDirect()">GoDirect</button>
     </div>
-    <div class="main2 container"> 
-       <div class="theme row ">
-        <div class=" point col-3 row p-4">
-            <div class="player1 col-12"></div>
-            <div class="player2 col-12"></div>
+    <div class="main2 "> 
+       <div class="theme row p-3 justify-content-center">
+        <div class=" point col-md-4 mx-2  p-4">
+            <div class="row justify-content-center">
+                <div class="player1 col-9"></div>
+                <div class="player2 col-9"></div>
+            </div>
         </div>
-        <div class="content col-9 row justify-content-center">
-            <div class="win col-12">
+        <div class="content col-md-7 m-2 row justify-content-center">
+            <div class="win col-12 m-3 p-2">
                 <p>hello</p>
             </div>
-            <div id="tic" class="col-12 row">     
+            <div id="tic" class="col-12 row p-0">     
+                <!-- <div class="row"> -->
                 <div class="tac col-4" style="border-right: 2px solid black; border-bottom: 2px solid black;" id="0"></div>
                 <div class="tac col-4" style="border-right: 2px solid black; border-bottom: 2px solid black;" id="1"></div>
                 <div class="tac col-4" style="border-bottom: 2px solid black;" id="2"></div>
@@ -38,9 +41,10 @@
                 <div class="tac col-4" style="border-right: 2px solid black;" id="6"></div>
                 <div class="tac col-4" style="border-right: 2px solid black;" id="7"></div>
                 <div class="tac col-4" id="8"></div>
+                <!-- </div> -->
             </div>
-            <div class="col-6">
-                <button onclick="reset()">Reset</button>
+            <div class="col-6 m-2 ">
+                <button class="mx-3" onclick="reset()">Reset</button>
                 <button onclick="restart()">Restart</button>
             </div>
         </div>
